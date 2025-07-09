@@ -1,0 +1,35 @@
+{"level":30,"time":"2025-07-09T07:17:29.059Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"Listening on 127.0.0.1:54034"}
+(node:17940) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-07-09T07:17:29.543Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-07-09T07:17:29.823Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"Adding browser to stack: chromium, version: 138.0.7204.23"}
+{"level":30,"time":"2025-07-09T07:17:29.825Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-07-09T07:17:29.824Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-07-09T07:17:29.846Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-07-09T07:17:29.848Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-07-09T07:17:29.885Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"Changed active context"}
+{"level":30,"time":"2025-07-09T07:17:30.162Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"Video path: undefined"}
+{"level":30,"time":"2025-07-09T07:17:30.162Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"Changed active page"}
+{"level":30,"time":"2025-07-09T07:17:31.394Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"End of node method newPage"}
+{"level":30,"time":"2025-07-09T07:17:31.401Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"Start of node method getText"}
+{"level":30,"time":"2025-07-09T07:17:31.402Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"Strict mode is enabled, find Locator with css = .headline h2 in page."}
+{"level":30,"time":"2025-07-09T07:17:31.547Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"Retrieved text for element css = .headline h2 containing Sua Jornada Fitness Começa aqui!"}
+{"level":30,"time":"2025-07-09T07:17:31.547Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"End of node method getText"}
+{"level":30,"time":"2025-07-09T07:17:36.563Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-09T07:17:36.568Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-09T07:17:36.573Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-09T07:17:36.576Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-09T07:17:36.584Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-09T07:17:36.587Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-09T07:17:36.592Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-09T07:17:36.594Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-09T07:17:36.599Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"Changed active context"}
+{"level":30,"time":"2025-07-09T07:17:36.599Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"Changing current active page: page=4ef743c7-9bcb-4b53-bec3-1bbc221a5860"}
+{"level":30,"time":"2025-07-09T07:17:36.599Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"Changed active page"}
+{"level":30,"time":"2025-07-09T07:17:36.606Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-07-09T07:17:36.631Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"Removed page=87184880-2347-47a2-baae-6ab0e3e6c6d6 from context=36e4ee94-cd64-4f3d-8504-426cc9cc8e63 page stack"}
+{"level":30,"time":"2025-07-09T07:17:36.675Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-07-09T07:17:36.702Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-09T07:17:36.702Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-09T07:17:36.795Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-07-09T07:17:37.039Z","pid":17940,"hostname":"DESKTOP-25HRFPB","msg":"End of node method closeAllBrowsers"}

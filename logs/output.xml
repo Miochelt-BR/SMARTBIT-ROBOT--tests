@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-09T04:17:27.499272" rpa="false" schemaversion="5">
+<suite id="s1" name="Slogan" source="C:\Users\ThiagoDev\Desktop\Repos\SMARTBIT\Projets\SMARTBIT-ROBOT\tests\slogan.robot">
+<test id="s1-t1" name="Deve exibir Slogan na Landing page" line="6">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-07-09T04:17:27.804754" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\ThiagoDev\\Desktop\\Repos\\SMARTBIT\\Projets\\SMARTBIT-ROBOT\\logs\\browser\\traces\\temp\\23b0e701-d0fb-413f-a056-1b90074787b1"}</msg>
+<msg time="2025-07-09T04:17:27.843833" level="INFO">Starting Browser process C:\Users\ThiagoDev\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:54034</msg>
+<msg time="2025-07-09T04:17:29.829078" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\ThiagoDev\\Desktop\\Repos\\SMARTBIT\\Projets\\SMARTBIT-ROBOT\\logs\\browser\\traces\\temp\\23b0e701-d0fb-413f-a056-1b90074787b1"}</msg>
+<arg>browser=chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-07-09T04:17:27.803390" elapsed="2.026089"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-07-09T04:17:31.398287" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000</msg>
+<msg time="2025-07-09T04:17:31.398392" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>http://localhost:3000</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-07-09T04:17:29.831732" elapsed="1.566873"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-07-09T04:17:31.552812" level="INFO">Text: 'Sua Jornada Fitness Começa aqui!'</msg>
+<arg>css = .headline h2</arg>
+<arg>equal</arg>
+<arg>Sua Jornada Fitness Começa aqui!</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-07-09T04:17:31.399064" elapsed="0.153957"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-09T04:17:36.555190" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-09T04:17:31.553657" elapsed="5.001703"/>
+</kw>
+<msg time="2025-07-09T04:17:36.590210" level="INFO">Switching context to context=36e4ee94-cd64-4f3d-8504-426cc9cc8e63 in CURRENT</msg>
+<msg time="2025-07-09T04:17:36.605416" level="INFO">Successfully changed active context: context=36e4ee94-cd64-4f3d-8504-426cc9cc8e63</msg>
+<msg time="2025-07-09T04:17:36.684453" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2025-07-09T04:17:27.801863" elapsed="8.754393"/>
+</test>
+<doc>TESTE para verificar slogan  do  smartbit</doc>
+<status status="PASS" start="2025-07-09T04:17:27.501980" elapsed="9.186253"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Slogan" id="s1" pass="1" fail="0" skip="0">Slogan</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
