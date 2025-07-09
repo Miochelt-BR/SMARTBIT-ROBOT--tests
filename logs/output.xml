@@ -1,51 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-09T04:17:27.499272" rpa="false" schemaversion="5">
-<suite id="s1" name="Slogan" source="C:\Users\ThiagoDev\Desktop\Repos\SMARTBIT\Projets\SMARTBIT-ROBOT\tests\slogan.robot">
-<test id="s1-t1" name="Deve exibir Slogan na Landing page" line="6">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-09T05:30:57.459573" rpa="false" schemaversion="5">
+<suite id="s1" name="Signup" source="C:\Users\ThiagoDev\Desktop\Repos\SMARTBIT\Projets\SMARTBIT-ROBOT--tests\tests\signup.robot">
+<test id="s1-t1" name="Deve iniciar o cadastro do cliente" line="6">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-07-09T04:17:27.804754" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\ThiagoDev\\Desktop\\Repos\\SMARTBIT\\Projets\\SMARTBIT-ROBOT\\logs\\browser\\traces\\temp\\23b0e701-d0fb-413f-a056-1b90074787b1"}</msg>
-<msg time="2025-07-09T04:17:27.843833" level="INFO">Starting Browser process C:\Users\ThiagoDev\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:54034</msg>
-<msg time="2025-07-09T04:17:29.829078" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\ThiagoDev\\Desktop\\Repos\\SMARTBIT\\Projets\\SMARTBIT-ROBOT\\logs\\browser\\traces\\temp\\23b0e701-d0fb-413f-a056-1b90074787b1"}</msg>
+<msg time="2025-07-09T05:30:57.873728" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\ThiagoDev\\Desktop\\Repos\\SMARTBIT\\Projets\\SMARTBIT-ROBOT--tests\\logs\\browser\\traces\\temp\\f47b1570-e599-459d-a222-4aa32aea7d20"}</msg>
+<msg time="2025-07-09T05:30:57.931131" level="INFO">Starting Browser process C:\Users\ThiagoDev\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:57524</msg>
+<msg time="2025-07-09T05:31:01.032936" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\ThiagoDev\\Desktop\\Repos\\SMARTBIT\\Projets\\SMARTBIT-ROBOT--tests\\logs\\browser\\traces\\temp\\f47b1570-e599-459d-a222-4aa32aea7d20"}</msg>
 <arg>browser=chromium</arg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-07-09T04:17:27.803390" elapsed="2.026089"/>
+<status status="PASS" start="2025-07-09T05:30:57.871556" elapsed="3.161769"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2025-07-09T04:17:31.398287" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000</msg>
-<msg time="2025-07-09T04:17:31.398392" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2025-07-09T05:31:02.633925" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000</msg>
+<msg time="2025-07-09T05:31:02.634010" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>http://localhost:3000</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-07-09T04:17:29.831732" elapsed="1.566873"/>
+<status status="PASS" start="2025-07-09T05:31:01.034550" elapsed="1.599671"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2025-07-09T04:17:31.552812" level="INFO">Text: 'Sua Jornada Fitness Começa aqui!'</msg>
-<arg>css = .headline h2</arg>
+<msg time="2025-07-09T05:31:02.722815" level="INFO">Text: 'Faça seu cadastro e venha para a Smartbit!'</msg>
+<arg>css = #signup h2</arg>
 <arg>equal</arg>
-<arg>Sua Jornada Fitness Começa aqui!</arg>
+<arg>Faça seu cadastro e venha para a Smartbit!</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-07-09T04:17:31.399064" elapsed="0.153957"/>
+<status status="PASS" start="2025-07-09T05:31:02.634609" elapsed="0.088390"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-07-09T05:31:02.724122" level="INFO">Fills the text 'master dev qa' in the given field.</msg>
+<arg>id=name</arg>
+<arg>master dev qa</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-07-09T05:31:02.723397" elapsed="0.023666"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-07-09T05:31:02.749674" level="INFO">Fills the text 'teste@master.com' in the given field.</msg>
+<arg>id =email</arg>
+<arg>teste@master.com</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-07-09T05:31:02.747825" elapsed="0.027105"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-07-09T05:31:02.776992" level="INFO">Fills the text '52324366002' in the given field.</msg>
+<arg>id=document</arg>
+<arg>52324366002</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-07-09T05:31:02.775760" elapsed="0.021309"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-07-09T05:31:02.798837" level="INFO">Clicks the element 'css= button &gt;&gt; text=Cadastrar'.</msg>
+<arg>css= button &gt;&gt; text=Cadastrar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-07-09T05:31:02.797781" elapsed="0.080966"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-07-09T04:17:36.555190" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
+<msg time="2025-07-09T05:31:12.881382" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-07-09T04:17:31.553657" elapsed="5.001703"/>
+<status status="PASS" start="2025-07-09T05:31:02.879335" elapsed="10.002180"/>
 </kw>
-<msg time="2025-07-09T04:17:36.590210" level="INFO">Switching context to context=36e4ee94-cd64-4f3d-8504-426cc9cc8e63 in CURRENT</msg>
-<msg time="2025-07-09T04:17:36.605416" level="INFO">Successfully changed active context: context=36e4ee94-cd64-4f3d-8504-426cc9cc8e63</msg>
-<msg time="2025-07-09T04:17:36.684453" level="INFO">Successfully closed Context</msg>
-<status status="PASS" start="2025-07-09T04:17:27.801863" elapsed="8.754393"/>
+<msg time="2025-07-09T05:31:12.896880" level="INFO">Switching context to context=5ec57dac-ddd4-4a85-b989-5f28f1c0c605 in CURRENT</msg>
+<msg time="2025-07-09T05:31:12.903365" level="INFO">Successfully changed active context: context=5ec57dac-ddd4-4a85-b989-5f28f1c0c605</msg>
+<msg time="2025-07-09T05:31:12.919578" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2025-07-09T05:30:57.868915" elapsed="15.012959"/>
 </test>
-<doc>TESTE para verificar slogan  do  smartbit</doc>
-<status status="PASS" start="2025-07-09T04:17:27.501980" elapsed="9.186253"/>
+<doc>cenarios de testes de pre cadastro</doc>
+<status status="PASS" start="2025-07-09T05:30:57.462191" elapsed="15.459275"/>
 </suite>
 <statistics>
 <total>
@@ -54,7 +89,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="Slogan" id="s1" pass="1" fail="0" skip="0">Slogan</stat>
+<stat name="Signup" id="s1" pass="1" fail="0" skip="0">Signup</stat>
 </suite>
 </statistics>
 <errors>
