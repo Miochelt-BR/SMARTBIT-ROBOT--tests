@@ -4,13 +4,17 @@ Library        Browser
 
 *** Test Cases ***
 Deve iniciar o cadastro do cliente 
-        New Browser     browser=chromium   headless=False
-         New Page    http://localhost:3000
-         Get Text    css = #signup h2     equal    Faça seu cadastro e venha para a Smartbit!
-         Fill Text    id=name    master dev qa 
-         Fill Text    id =email  teste@master.com
-         Fill Text    id=document    52324366002
-         Click       css= button >> text=Cadastrar
+      
+        New Browser        browser=chromium    headless=False
+    New Page           http://localhost:3000
 
-             
-        Sleep     10
+    Get Text           css=#signup h2    equal    Faça seu cadastro e venha para a Smartbit!
+  
+    Fill Text          id=name           master dev qa
+    Fill Text          id=email          teste@masterre.com
+    Fill Text          id=document       30673333060
+
+    Click              css=button >> text=Cadastrar
+    
+    Wait For Elements State    text=Falta pouco para fazer parte da família Smartbit!    visible    5
+    Sleep              10
