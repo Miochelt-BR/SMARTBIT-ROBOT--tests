@@ -1,29 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-10T11:23:45.034876" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-10T17:56:56.258822" rpa="false" schemaversion="5">
 <suite id="s1" name="Signup" source="C:\Users\ThiagoDev\Desktop\Repos\SMARTBIT\Projets\SMARTBIT-ROBOT--tests\tests\signup.robot">
-<test id="s1-t1" name="Deve iniciar o cadastro do cliente" line="6">
+<test id="s1-t1" name="Deve iniciar o cadastro do cliente" line="7">
+<kw name="Get Fake Account" owner="Account">
+<msg time="2025-07-10T17:56:56.738446" level="INFO">${account} = {'name': 'devemaster', 'email': 'devmaster@outlater.com', 'document': '30673333060'}</msg>
+<var>${account}</var>
+<status status="PASS" start="2025-07-10T17:56:56.737227" elapsed="0.001298"/>
+</kw>
 <kw name="New Browser" owner="Browser">
-<msg time="2025-07-10T11:23:45.367213" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\ThiagoDev\\Desktop\\Repos\\SMARTBIT\\Projets\\SMARTBIT-ROBOT--tests\\logs\\browser\\traces\\temp\\d72d0192-e698-48d5-ac4c-ee4c4cac536b"}</msg>
-<msg time="2025-07-10T11:23:45.414876" level="INFO">Starting Browser process C:\Users\ThiagoDev\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:50969</msg>
-<msg time="2025-07-10T11:23:47.863632" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\ThiagoDev\\Desktop\\Repos\\SMARTBIT\\Projets\\SMARTBIT-ROBOT--tests\\logs\\browser\\traces\\temp\\d72d0192-e698-48d5-ac4c-ee4c4cac536b"}</msg>
+<msg time="2025-07-10T17:56:56.740094" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\ThiagoDev\\Desktop\\Repos\\SMARTBIT\\Projets\\SMARTBIT-ROBOT--tests\\logs\\browser\\traces\\temp\\751d6418-f46e-46b3-aa83-c95cb4bf915b"}</msg>
+<msg time="2025-07-10T17:56:56.793225" level="INFO">Starting Browser process C:\Users\ThiagoDev\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:55986</msg>
+<msg time="2025-07-10T17:57:00.269788" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\ThiagoDev\\Desktop\\Repos\\SMARTBIT\\Projets\\SMARTBIT-ROBOT--tests\\logs\\browser\\traces\\temp\\751d6418-f46e-46b3-aa83-c95cb4bf915b"}</msg>
 <arg>browser=chromium</arg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-07-10T11:23:45.365909" elapsed="2.498206"/>
+<status status="PASS" start="2025-07-10T17:56:56.738940" elapsed="3.531303"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2025-07-10T11:23:49.471698" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000</msg>
-<msg time="2025-07-10T11:23:49.471834" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2025-07-10T17:57:01.819747" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000</msg>
+<msg time="2025-07-10T17:57:01.819854" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>http://localhost:3000</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-07-10T11:23:47.865639" elapsed="1.606501"/>
+<status status="PASS" start="2025-07-10T17:57:00.272635" elapsed="1.547424"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2025-07-10T11:23:49.642916" level="INFO">Text: 'Faça seu cadastro e venha para a Smartbit!'</msg>
+<msg time="2025-07-10T17:57:01.908229" level="INFO">Text: 'Faça seu cadastro e venha para a Smartbit!'</msg>
 <arg>css=#signup h2</arg>
 <arg>equal</arg>
 <arg>Faça seu cadastro e venha para a Smartbit!</arg>
@@ -31,75 +36,77 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-07-10T11:23:49.473387" elapsed="0.169811"/>
+<status status="PASS" start="2025-07-10T17:57:01.820603" elapsed="0.087765"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-07-10T11:23:49.645623" level="INFO">Fills the text 'master dev qa' in the given field.</msg>
+<msg time="2025-07-10T17:57:01.910411" level="INFO">Fills the text 'devemaster' in the given field.</msg>
 <arg>id=name</arg>
-<arg>master dev qa</arg>
+<arg>${account}[name]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-07-10T11:23:49.644368" elapsed="0.048615"/>
+<status status="PASS" start="2025-07-10T17:57:01.909099" elapsed="0.022659"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-07-10T11:23:49.696244" level="INFO">Fills the text 'teste@masterre.com' in the given field.</msg>
+<msg time="2025-07-10T17:57:01.934414" level="INFO">Fills the text 'teste@masterre.com' in the given field.</msg>
 <arg>id=email</arg>
 <arg>teste@masterre.com</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-07-10T11:23:49.694656" elapsed="0.039330"/>
+<status status="PASS" start="2025-07-10T17:57:01.932667" elapsed="0.020763"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-07-10T11:23:49.736354" level="INFO">Fills the text '30673333060' in the given field.</msg>
+<msg time="2025-07-10T17:57:01.954849" level="INFO">Fills the text '30673333060' in the given field.</msg>
 <arg>id=document</arg>
 <arg>30673333060</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-07-10T11:23:49.734964" elapsed="0.028506"/>
+<status status="PASS" start="2025-07-10T17:57:01.953906" elapsed="0.023356"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2025-07-10T11:23:49.765088" level="INFO">Clicks the element 'css=button &gt;&gt; text=Cadastrar'.</msg>
+<msg time="2025-07-10T17:57:01.978897" level="INFO">Clicks the element 'css=button &gt;&gt; text=Cadastrar'.</msg>
 <arg>css=button &gt;&gt; text=Cadastrar</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-07-10T11:23:49.764010" elapsed="0.105734"/>
+<status status="PASS" start="2025-07-10T17:57:01.977835" elapsed="0.090949"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-07-10T11:23:52.243815" level="INFO">Waited for Element with selector text=Falta pouco para fazer parte da família Smartbit! at state visible</msg>
+<msg time="2025-07-10T17:57:07.079269" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-07-10T17:57:07.079463" level="INFO">See also file:///C:/Users/ThiagoDev/Desktop/Repos/SMARTBIT/Projets/SMARTBIT-ROBOT--tests/logs/playwright-log.txt for additional details.</msg>
+<msg time="2025-07-10T17:57:07.080490" level="FAIL">Error: Could not find active page</msg>
 <arg>text=Falta pouco para fazer parte da família Smartbit!</arg>
 <arg>visible</arg>
 <arg>5</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-07-10T11:23:49.870833" elapsed="2.373818"/>
+<status status="FAIL" start="2025-07-10T17:57:02.069290" elapsed="5.023737">Error: Could not find active page</status>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-07-10T11:24:02.247841" level="INFO">Slept 10 seconds.</msg>
 <arg>10</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-07-10T11:23:52.245840" elapsed="10.002184"/>
+<status status="NOT RUN" start="2025-07-10T17:57:07.093670" elapsed="0.000279"/>
 </kw>
-<msg time="2025-07-10T11:24:02.279314" level="INFO">Switching context to context=0f4f98e1-7d40-4a29-ad03-9649be87dc13 in CURRENT</msg>
-<msg time="2025-07-10T11:24:02.297419" level="INFO">Successfully changed active context: context=0f4f98e1-7d40-4a29-ad03-9649be87dc13</msg>
-<msg time="2025-07-10T11:24:02.364827" level="INFO">Successfully closed Context</msg>
-<status status="PASS" start="2025-07-10T11:23:45.364527" elapsed="16.884306"/>
+<msg time="2025-07-10T17:57:07.111126" level="INFO">Switching context to context=40116530-8463-4db6-80cd-085571965e35 in CURRENT</msg>
+<msg time="2025-07-10T17:57:07.117880" level="INFO">Successfully changed active context: context=40116530-8463-4db6-80cd-085571965e35</msg>
+<msg time="2025-07-10T17:57:07.131047" level="INFO">Successfully closed Context</msg>
+<status status="FAIL" start="2025-07-10T17:56:56.735793" elapsed="10.358533">Error: Could not find active page</status>
 </test>
 <doc>cenarios de testes de pre cadastro</doc>
-<status status="PASS" start="2025-07-10T11:23:45.037998" elapsed="17.334066"/>
+<status status="FAIL" start="2025-07-10T17:56:56.261167" elapsed="10.872196"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Signup" id="s1" pass="1" fail="0" skip="0">Signup</stat>
+<stat name="Signup" id="s1" pass="0" fail="1" skip="0">Signup</stat>
 </suite>
 </statistics>
 <errors>
